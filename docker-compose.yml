@@ -28,3 +28,5 @@ services:
       - POSTGRES_PASSWORD=postgres
     ports:
       - "5432:5432"
+    volumes:
+      - ./tmp/pg:/var/lib/postgresql/data
